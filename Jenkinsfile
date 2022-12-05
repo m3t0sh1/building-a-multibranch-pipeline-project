@@ -3,7 +3,7 @@ pipeline {
         docker {
             image 'node:lts-alpine'
             label 'docker-agent'
-            args '-p 3000:3000 -p 5000:5000'
+            args '-p 3000:3000 -p 5050:5050'
         }
     }
     environment {
