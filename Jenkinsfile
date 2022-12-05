@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'node:lts-alpine'
-            label 'evarga'
+            label 'docker-agent'
             args '-p 3000:3000 -p 5050:5050'
         }
     }
